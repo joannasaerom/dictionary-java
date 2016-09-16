@@ -1,5 +1,14 @@
 <h1>THE dictionary</h1>
+
 <ul>
   #foreach ($word in $words)
-  <li>SOMETHING TO DISPLAYWORDS</li>
+  <li><a href="/words/$word.getId()">$word.getWord()</a></li>
+  #end
 </ul>
+<form action="/words" method="post" class="form-control">
+  <div class="form-group">
+    <label for="addWord">Add another word:</label>
+    <input id="addWord" name="addWord" type="text">
+  </div>
+  <button type="submit" class="btn">Add word</button>
+</form>

@@ -1,5 +1,13 @@
 <h1>$word</h1>
 <ol>
-  #foreach ($defintion in $definitions)
-  <li>$definition</li>
+  #foreach ($defintion in $word)
+  <li>$word.getDefinition();</li>
 </ol>
+<form action="words/$word.getId()" method="post" class="form-control">
+  <div class="form-group">
+    <label for="addDefinition">Add another definition:</label>
+    <input id="addDefinition" name="addDefinition" type="text">
+  </div>
+  <button type="submit" class="btn">Add!</button>
+</form>
+<a href="/words"><p>Go to full list</p></a>
