@@ -1,0 +1,71 @@
+h1{
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-size: 4em;
+  text-decoration: overline underline;
+  color: black;
+}
+body{
+  font-family: 'Old Standard TT', serif;
+}
+input{
+  max-width: 500px;
+}
+ul li{
+  list-style-type: none;
+  color: black;
+  font-size: 25px;
+  text-transform: capitalize;
+}
+a{
+  color: black;
+  text-decoration: none;
+}
+a:hover{
+  font-style: italic;
+  color: black;
+  text-decoration: none;
+}
+label{
+  font-size: 18px;
+}
+.jumbotron{
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%);
+}
+.col-sm-3{
+  background-color: black;
+  box-shadow: 3px 3px 2px grey;
+  border-radius: 5px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.btn{
+  border: 2px solid white;
+}
+.btn:hover{
+  border: 2px solid white;
+  background: none;
+  color: white;
+}
+.customBtn{
+  background: none;
+  border: 2px solid black;
+}
+.customBtn:hover{
+  background: none;
+  border: 2px solid black;
+  color: black;
+}
+#dictionaryPage label, #detailsPage label{
+  color: white;
+}
+
+.row{
+  margin-top: 15px;
+}

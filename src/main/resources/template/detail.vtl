@@ -1,15 +1,25 @@
-<h1>$word.getWord()</h1>
-<ol>
-  #foreach ($definition in $definitions)
-  <li>$definition.getDefinition()</li>
-  #end
-</ol>
-<form action="/words/$word.getId()" method="post" class="form-control">
-  <div class="form-group">
-    <label for="addDefinition">Add another definition:</label>
-    <input id="addDefinition" name="addDefinition" type="text">
+<h1>THE Dictionary</h1>
+<h2>$word.getWord()</h2>
+<div class="row">
+  <div class="col-sm-9">
+    #if (!$definitions.isEmpty())
+      <ol>
+        #foreach ($definition in $definitions)
+        <li>$definition.getDefinition()</li>
+        #end
+      </ol>
+    #else
+    <p>Uh-oh! This word has no definition. Add one now!</p>
+    #end
+    <p><a href="/words">Go to full list</a></p>
   </div>
-  <button type="submit" class="btn">Add!</button>
-</form>
-
-<p><a href="/words">Go to full list</a></p>
+  <div class="col-sm-3"  id="detailsPage">
+    <form action="/words/$word.getId()" method="post">
+      <div class="form-group">
+        <label for="addDefinition">Add another definition:</label>
+        <input id="addDefinition" name="addDefinition" type="text" class="form-control" placeholder="Enter a new definition...">
+      </div>
+      <button type="submit" class="btn btn-default">Add!</button>
+    </form>
+  </div>
+</div>
