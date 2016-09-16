@@ -1,8 +1,7 @@
-<h1>$word</h1>
+<h1>$word.getWord()</h1>
 <ol>
-  #foreach ($defintion in $word)
-  <li>is it going intot his loop?</li>
-  <li>$word.getDefinition();</li>
+  #foreach ($definition in $definitions)
+  <li>$definition.getDefinition()</li>
   #end
 </ol>
 <form action="/words/$word.getId()" method="post" class="form-control">

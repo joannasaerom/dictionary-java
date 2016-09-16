@@ -39,4 +39,23 @@ public class WordTest {
     Word secondWord = new Word("Gum");
     assertEquals(secondWord, Word.find(secondWord.getId()));
   }
+
+  @Test
+  public void addDefinition_addsDefinitionToWord_true() {
+    Word firstWord = new Word("Bubble");
+    Definition firstDefinition = new Definition("Fun stuff");
+    firstWord.addDefinition(firstDefinition);
+    assertEquals(true, firstWord.getDefinitions().contains(firstDefinition));
+  }
+
+  @Test
+  public void getDefinitions_returnsDefinitions_true() {
+    Word firstWord = new Word("Bubble");
+    Definition firstDefinition = new Definition("Fun stuff");
+    Definition secondDefinition = new Definition("Something");
+    firstWord.addDefinition(firstDefinition);
+    firstWord.addDefinition(secondDefinition);
+    assertEquals(true, firstWord.getDefinitions().contains(firstDefinition));
+    assertEquals(true, firstWord.getDefinitions().contains(secondDefinition));
+  }
 }
