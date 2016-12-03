@@ -8,6 +8,8 @@
 
 _This application is a customized dictionary. Users are able to create their own dictionary with words and its original definition._
 
+<img src="/screenshot.png">
+
 ## Installation Requirements
 
 1. Go to [my GitHub](https://github.com/jsaerom/dictionary-java)
@@ -15,6 +17,10 @@ _This application is a customized dictionary. Users are able to create their own
 **OR**
 1. Open Terminal
 2. Command $ git clone https://github.com/jsaerom/dictionary-java
+
+##To Run the Program:
+1. Type `gradle run` into terminal within the dictionary-java directory
+2. Navigate to `http://localhost:4567`
 
 ## Technologies Used
 
