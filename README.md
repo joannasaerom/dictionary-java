@@ -8,7 +8,7 @@
 
 _This application is a customized dictionary. Users are able to create their own dictionary with words and its original definition._
 
-<img src="resources/public/screenshot.png">
+<img src="src/main/resources/public/screenshot.png">
 
 ## Installation Requirements
 
